@@ -7,5 +7,5 @@ import matplotlib.pyplot as plt
 gasolina_pd = pd.read_csv('gasolina.csv', sep=',')
 with sns.axes_style('whitegrid'):
   gasolina_grafico= sns.lineplot(data=gasolina_pd, x='dia', y='venda')
-  gasolina_grafico.set(title='Preço da gasolina - São Paulo - Julho de 2021', xlabel='Dia', ylabel='Preço médio (R$)')
+  gasolina_grafico.set(title='Preço da gasolina - Julho de 2021 - SP', xlabel='Dias', ylabel='Preço médio em reais(R$)')
   plt.savefig('gasolina.png')
